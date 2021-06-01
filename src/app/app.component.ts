@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first';
+
+  doSomething(): void {
+    alert("Doing something...");
+  }
+
+  doAnotherThing(): void {
+    alert("Doing another thing...");
+  }
+
+  doSomethingElse(): void {
+    alert("Doing something else...");
+  }
+
 }
