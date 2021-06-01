@@ -1,0 +1,16 @@
+.list {
+  background-color: lightsteelblue;
+  padding: 1rem;
+  margin: 3rem auto;
+  max-width: 60%;
+}
+
+h3 {
+  color: lightcoral;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: brown;
+}

@@ -1,1 +1,9 @@
-<p>hey {{name}}!</p>
+<h1 *ngIf="name; else noNameBlock">Hey {{name}}!</h1>
+<ng-template #noNameBlock>
+    <h1>Howdy!</h1>
+</ng-template>
+<p *ngIf="age; else young">Age: {{age}}</p>
+<ng-template #young>
+    <p>Your age is unknown!</p>
+</ng-template>
+<p *ngIf="hairColor">Hair color: {{hairColor}}</p>
