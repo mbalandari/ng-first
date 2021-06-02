@@ -9,6 +9,8 @@ import { EventHandlingComponent } from './event-handling/event-handling.componen
 import { MultipleChoiceComponent } from './multiple-choice/multiple-choice.component';
 import { CounterButtonComponent } from './counter-button/counter-button.component';
 import { GongratMessageComponent } from './gongrat-message/gongrat-message.component';
+import { CounterButtonPageComponent } from './counter-button-page/counter-button-page.component';
+import { ParamsExampleComponent } from './params-example/params-example.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { GongratMessageComponent } from './gongrat-message/gongrat-message.compo
     EventHandlingComponent,
     MultipleChoiceComponent,
     CounterButtonComponent,
-    GongratMessageComponent
+    GongratMessageComponent,
+    CounterButtonPageComponent,
+    ParamsExampleComponent
   ],
   imports: [
     BrowserModule,
