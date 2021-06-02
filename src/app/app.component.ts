@@ -7,17 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first';
+  count: number = 0;
 
-  doSomething(): void {
-    alert("Doing something...");
-  }
-
-  doAnotherThing(): void {
-    alert("Doing another thing...");
-  }
-
-  doSomethingElse(): void {
-    alert("Doing something else...");
+  incrementCount(): void {
+    this.count += 1;
   }
 
 }
