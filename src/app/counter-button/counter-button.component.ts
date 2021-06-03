@@ -10,7 +10,7 @@ export class CounterButtonComponent implements OnInit, OnDestroy {
 
   @Output() buttonClicked = new EventEmitter<void>();
   
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
    

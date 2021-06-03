@@ -5,6 +5,9 @@ import {EventHandlingComponent} from './event-handling/event-handling.component'
 import {ExampleComponent} from './example/example.component';
 import {MultipleChoiceComponent} from './multiple-choice/multiple-choice.component';
 import {InfoListComponent} from './info-list/info-list.component';
+import {ParamsExampleComponent} from './params-example/params-example.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
 
 const routes: Routes = [
   {path: "counter-button", component: CounterButtonPageComponent},
@@ -12,7 +15,10 @@ const routes: Routes = [
   {path: "example", component: ExampleComponent},
   {path: "multiple-choice", component: MultipleChoiceComponent},
   {path: "info-list", component: InfoListComponent},
-  {path: "", redirectTo: "/info-list", pathMatch: "full"}
+  {path: "params-example/:urlParam/:anotherParam", component: ParamsExampleComponent},
+  {path: "user-info-form", component: UserInfoFormComponent},
+  {path: "", redirectTo: "/info-list", pathMatch: "full"},
+  {path: "**", component: NotFoundPageComponent}
 ];
 
 @NgModule({

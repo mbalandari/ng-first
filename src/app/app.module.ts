@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,8 @@ import { CounterButtonComponent } from './counter-button/counter-button.componen
 import { GongratMessageComponent } from './gongrat-message/gongrat-message.component';
 import { CounterButtonPageComponent } from './counter-button-page/counter-button-page.component';
 import { ParamsExampleComponent } from './params-example/params-example.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { ParamsExampleComponent } from './params-example/params-example.componen
     CounterButtonComponent,
     GongratMessageComponent,
     CounterButtonPageComponent,
-    ParamsExampleComponent
+    ParamsExampleComponent,
+    NotFoundPageComponent,
+    UserInfoFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
