@@ -20,6 +20,7 @@ import { UserDisplayComponent } from './user-display/user-display.component';
 import { ButtonComponent } from './button/button.component';
 import { DangerButtonComponent } from './danger-button/danger-button.component';
 import { SuccessButtonComponent } from './success-button/success-button.component';
+import { CompositionButtonComponent } from './composition-button/composition-button.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SuccessButtonComponent } from './success-button/success-button.componen
     UserDisplayComponent,
     ButtonComponent,
     DangerButtonComponent,
-    SuccessButtonComponent
+    SuccessButtonComponent,
+    CompositionButtonComponent
   ],
   imports: [
     BrowserModule,
