@@ -8,6 +8,7 @@ import {InfoListComponent} from './info-list/info-list.component';
 import {ParamsExampleComponent} from './params-example/params-example.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
+import { UserDisplayComponent } from './user-display/user-display.component';
 
 const routes: Routes = [
   {path: "counter-button", component: CounterButtonPageComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: "info-list", component: InfoListComponent},
   {path: "params-example/:urlParam/:anotherParam", component: ParamsExampleComponent},
   {path: "user-info-form", component: UserInfoFormComponent},
+  {path: "user-display", component: UserDisplayComponent},
   {path: "", redirectTo: "/info-list", pathMatch: "full"},
   {path: "**", component: NotFoundPageComponent}
 ];
