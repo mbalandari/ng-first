@@ -17,6 +17,9 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { UserDisplayComponent } from './user-display/user-display.component';
+import { ButtonComponent } from './button/button.component';
+import { DangerButtonComponent } from './danger-button/danger-button.component';
+import { SuccessButtonComponent } from './success-button/success-button.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { UserDisplayComponent } from './user-display/user-display.component';
     NotFoundPageComponent,
     UserInfoFormComponent,
     NavBarComponent,
-    UserDisplayComponent
+    UserDisplayComponent,
+    ButtonComponent,
+    DangerButtonComponent,
+    SuccessButtonComponent
   ],
   imports: [
     BrowserModule,
